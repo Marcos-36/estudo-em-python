@@ -4,7 +4,6 @@ valor2 = 0
 valor3 = 0
 valor4 = 0
 valor5 = 0
-soma = 0 
 pfrances = 0
 pintegral = 0
 pdoceliso = 0
@@ -55,11 +54,16 @@ while opcao != 6:
         print("FIM DA COMPRA...")
         print("-------------------------------------")
         print("=== RECIBO DE SUA COMPRA ===")
-        print(f"Pão Francês : {pfrances}  unid - R$ {valor1:.2f}💸")
-        print(f"Pão Integral : {pintegral} unid - R$ {valor2:.2f}💰")
-        print(f"Pão doce liso :{pdoceliso} unid - R$ {valor3:.2f}🤑")
-        print(f"Pão doce farofa : {pdocefarofa} unid - R$ {valor4:.2f}💵")
-        print(f"Pão de forma :{pforma} unid - R$ {valor5:.2f}💷")
+        if pfrances > 0:
+            print(f"Pão Francês : {pfrances:.0f}  unid - R$ {valor1:.2f}💸")
+        if pintegral > 0:
+            print(f"Pão Integral : {pintegral:.0f} unid - R$ {valor2:.2f}💰")
+        if pdoceliso >0 :
+            print(f"Pão doce liso :{pdoceliso:.0f} unid - R$ {valor3:.2f}🤑")
+        if pdocefarofa >0 :
+            print(f"Pão doce farofa : {pdocefarofa:.0f} unid - R$ {valor4:.2f}💵")
+        if pforma > 0:
+            print(f"Pão de forma :{pforma:.0f} unid - R$ {valor5:.2f}💷")
         print(f"TOTAL A PAGAR : R${valortotal:.2f}💴")
         print("=== AGRADECEMOS A PREFERÊNCIA ❤️ 🍞 ===")
         print("---------------------------------------")
